@@ -1,0 +1,72 @@
+.bigbox{
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color: orangered;
+}
+
+.carrot{
+    width: 100%;
+    background-color: orange;
+    height: 120px;
+}
+
+.carrot_name{
+    text-align: center;
+    font-size: 41px;
+    color: white;
+    line-height: 120px;
+}
+
+.carrot2{
+    width: 100%;
+    height: 40px;
+    background-color: orangered;
+}
+
+.idname{
+    font-size: 18px;
+    padding-left: 16px;
+    padding-top: 24px;
+}
+
+.minibox{
+    width: 75%;
+    margin-left: 16px;
+    height: 30px;
+}
+
+.carrot3{
+    width: 100%;
+    height: 40px;
+    background-color: orangered;
+}
+
+.passwordname{
+    padding-top: 80px;
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+.minibox2{
+    width: 75%;
+    margin-left: 16px;
+    height: 30px;
+}
+
+.carrot4{
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    margin-top: 45%;
+    height: 36px;
+}
+
+.join{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
