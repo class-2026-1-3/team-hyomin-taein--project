@@ -1,0 +1,121 @@
+* {margin: 0; padding: 0; }
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(255, 184, 117);
+    display:flex;
+    border-bottom: 3px solid #ed8116;
+    
+}
+.left-nav{
+    width: 50%;
+    margin-left: 0;
+
+    padding: 1px;
+    padding-top: 15px;
+}
+.nav-title{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    border: 1px solid #ed8116;
+    border-radius: 12px;
+    background-color: #ed8116;
+}
+
+.right-nav{
+    width: 50%;
+    margin-right: 0;
+    padding: 1px;
+    padding-top: 20px;
+}
+
+.nav-login{
+    margin-left: 85%;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #000000;
+
+}
+
+.nav-post{
+    margin-left: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #000000;
+
+}
+
+.main{
+    margin-top: 30px;
+    background-color: rgb(255, 241, 217);
+    width: 60%;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding-top: 50px;
+}
+
+.main-post-button{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+    
+}
+.main-post{
+    width: 60%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.post-title{
+    margin-left:20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.post-main{
+    width: 87%;
+    height: 70%;
+    background-color: rgb(241, 242, 242);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.post-image{
+    width:60%;
+    height: 70%;
+    float: left;
+    background-color: #000000;
+}
+
+.post-user{
+    margin-left: 30px
+}
