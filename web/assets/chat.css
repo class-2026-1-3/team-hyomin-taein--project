@@ -1,0 +1,126 @@
+.box{
+    width: 1100px;
+    height: 600px;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.mini{
+    width: 100%;
+    height: 70px;
+    background-color: brown;
+}
+
+.en1{
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: white;
+}
+
+.pro1{
+    width: 70px;
+    height: 85px;
+    border-radius: 50px;
+    background-color: black;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.pro2{
+    width: 320px;
+    height: 40px;
+    background-color: aqua;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.en2{
+    font-size: 22px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color:black;
+}
+
+.pro3{
+    width: 70px;
+    height: 85px;
+    border-radius: 50px;
+    background-color: black;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.en3{
+    font-size: 22px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color:black;
+}
+
+.pro4{
+    width: 320px;
+    height: 40px;
+    background-color: aqua;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+/* 전체 컨테이너를 세로 정렬 구조로 변경 */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 화면 전체 높이를 쓰거나, 고정된 높이를 지정하세요 */
+}
+
+/* 메시지 창이 남은 공간을 다 차지하고, 넘치면 스크롤되도록 설정 */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #FFA500; /* image_7d33e3.png의 주황색 배경 */
+    padding: 15px;
+}
+
+/* 📌 하단 입력창 영역 스타일 */
+.chat-input-container {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+    align-items: center;
+}
+
+/* 텍스트 입력창 */
+.chat-input {
+    flex: 1; /* 전송 버튼을 제외한 남은 너비를 전부 채움 */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* 둥글둥글한 채팅창 느낌 */
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input:focus {
+    border-color: #A52A2A; /* 헤더의 갈색 톤과 맞추면 예쁩니다 */
+}
+
+/* 보내기 버튼 */
+.send-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #A52A2A; /* 상단 헤더와 통일감을 주는 갈색/버건디 계열 */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.send-btn:hover {
+    background-color: #8B1A1A; /* 마우스 올렸을 때 살짝 어두워지게 */
+}
