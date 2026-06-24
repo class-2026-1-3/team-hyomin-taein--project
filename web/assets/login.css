@@ -58,10 +58,9 @@
 
 .carrot4{
     width: 67%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(219, 208, 208);
-    margin-top: 45%;
+    margin-left: 50px;
+    background-color: azure;
+    margin-top: 55%;
     height: 36px;
 }
 
