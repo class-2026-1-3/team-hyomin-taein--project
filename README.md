@@ -42,7 +42,7 @@ team-hyomin-taein--project/
 - 채팅기능
 
 # 기여 방법
-양효민(조장) : home페이지 제작, 파일 관리 총괄, 역할 분담, README 작성
+양효민(조장) : home페이지 제작, 파일 관리 총괄, 역할 분담, README 작성.   
 박태인 : chat페이지 제작, login페이지 제작
 
 
