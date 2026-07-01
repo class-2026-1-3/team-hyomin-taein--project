@@ -6,12 +6,11 @@
 프로젝트 주제 선정 이유 등 : 부소마고를 위한 교류하는 앱이 있으면 자신이 필요한 것을 쉽게 얻을수 있기 때문이다.
 
 # 프로젝트 구조 설명
-project/
+```text
+team-hyomin-taein--project/
  |--- .vscode
         |--- settings.json
  |--- mysql
-        |--- conf
-        |--- data
         |--- data.sql
         |--- Dokerfile
  |--- web
@@ -30,9 +29,11 @@ project/
                 |--- home.html
                 |--- login.html
                 |--- post.html
+        |--- Dockerfile
  |--- .gitignore
  |--- docker-compose.yml
  |--- README.md
+ ```
 
 # 기능
 - 로그인(회원가입)
@@ -42,13 +43,13 @@ project/
 
 # 기여 방법
 양효민(조장) : home페이지 제작, 파일 관리 총괄, 역할 분담, README 작성
-박태인 : chat페이지 제작, login페이지 제작, 수박게임하기
+박태인 : chat페이지 제작, login페이지 제작
 
 
 
 
 # 어려웠던 점 및 해결방법
-작업해야 할게 산더미인데 태인이가 수박 합치기 게임을 하고있었다.
+도커컴포트 과정에서 mysql부븐의 포트번호가 자꾸 충동이 일어나서 힘들었다.
 
 # 커밋메시지 양식                            
  **feat**     | 새로운 기능 추가                         

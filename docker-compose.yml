@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # ==========================================
+  # 1. MySQL 데이터베이스 컨테이너 설정
+  # ==========================================
+  db:
+    build: ./mysql
+    container_name: project_mysql_db
+    restart: always
+    
+    # [★ 필수 수정 부분] 데이터베이스 설정 정보입니다.
+    environment:
+      MYSQL_ROOT_PASSWORD: yhmyhm3387 # 👈 [변경 권장] MySQL 최고 관리자(root) 비밀번호를 적어주세요.
+      MYSQL_DATABASE: docker_project            # 👈 [변경 권장] 프로젝트에서 사용할 데이터베이스 이름을 적어주세요.
+    
+    # [참고] 내 컴퓨터의 3306 포트와 컨테이너의 3306 포트를 연결합니다.
+    ports:
+      - "3307:3306"
+      
+    # [★ 확인/수정 부분] 폴더 및 파일 연동 설정입니다.
+    volumes:
+      # 내 컴퓨터의 'mysql/data' 폴더와 컨테이너 내부를 연결하여, 컨테이너가 꺼져도 DB 데이터가 유지되게 합니다.
+      - ./mysql/data:/var/lib/mysql
+      
+      # [주석 해제 권장] 만약 컨테이너가 처음 켜질 때 'data.sql' 파일이 자동으로 실행되길 원하면 아래 줄 맨 앞의 '#'을 지워주세요.
+      # - ./mysql/data.sql:/docker-entrypoint-initdb.d/data.sql
+
+  # ==========================================
+  # 2. Web 웹 서버 컨테이너 설정 (HTML, CSS, 이미지)
+  # ==========================================
+  web:
+    # [수정할 필요 없음] 최상위 폴더 기준으로 'web' 폴더를 찾아가서 그 안의 Dockerfile을 읽고 빌드합니다.
+    build: ./web
+    container_name: project_web_server
+    restart: always
+    
+    # [★ 확인/수정 부분] 포트 설정입니다.
+    # 만약 내 컴퓨터에서 이미 80번 포트를 다른 용도로 쓰고 있어서 에러가 난다면,
+    # 앞의 80을 다른 숫자(예: "8080:80")로 바꾸고 접속할 때 localhost:8080으로 접속하세요.
+    ports:
+      - "80:80"
+      
+    # [수정할 필요 없음] 'db' 컨테이너가 완전히 먼저 실행된 후에 'web' 컨테이너가 켜지도록 순서를 보장합니다.
+    depends_on:
+      - db
